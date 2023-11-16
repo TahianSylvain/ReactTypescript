@@ -8,6 +8,12 @@ import { Greet } from './Components/Typing3Props';
 
 
 function App() {
+  const messages = [
+    {
+      id: 1,
+      mail: 'Your bae break up with u!'
+    }
+  ]
   return (
     <div className="App">
       <header className="App-header">
@@ -26,7 +32,8 @@ function App() {
           Learn React
         </a>
 
-        <Greet name='World'></Greet>
+        <Greet name='World' isLoggedIn={true} 
+          messageCount={messages}></Greet>
 
 
 
