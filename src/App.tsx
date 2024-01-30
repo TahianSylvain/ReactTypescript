@@ -4,16 +4,9 @@ import './App.css';
 
 import { Container } from './Components/StyleProp';
 import { Button, Input } from './Components/EventProps';
-import { Greet } from './Components/Typing3Props';
 
 
 function App() {
-  const messages = [
-    {
-      id: 1,
-      mail: 'Your bae break up with u!'
-    }
-  ]
   return (
     <div className="App">
       <header className="App-header">
@@ -31,45 +24,15 @@ function App() {
         >
           Learn React
         </a>
-
-        <Greet name='World' isLoggedIn={true} 
-          messageCount={messages}></Greet>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* <Container styles={
           { border: "7px solid white",
            padding: "1rem" }
           }/> 
         */}
-        {/* <Button handleClick={(event, id)=>{
+        <Button handleClick={(event, id)=>{
           console.log(id, React, event)
         }} />
-        <Input value='' handleChange={
-          event=>console.log(event)
-        } /> */}
+        <Input value='' handleChange={event=>console.log(event)} />
       </header>
     </div>
   );
