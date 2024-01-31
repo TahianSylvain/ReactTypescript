@@ -50,7 +50,7 @@ export const Board = () => {
 
     return <div>
         {!winner && <p>Hey {currentPlayer}, it's your turn</p>}
-        {winner && <p>Congratulations {winner}, it's your turn</p>}
+        {winner && <p>Congratulations {winner}!!</p>}
         {winner && winner === 'BOTH' && <p>Congratulations you're both winners</p>}
 
         <div className="grid">{ Array(9).fill(null).map( (_, i) => {
@@ -58,8 +58,7 @@ export const Board = () => {
                 key={i} 
                 winner={winner} 
                 onClick={()=>setSquareValue(i)} 
-                value = {squares[i]} >
-            </Square> })}
+                value = {squares[i]} /> })}
         </div>
         <button className="reset" onClick={reset}>Reset</button>
     </div> 
