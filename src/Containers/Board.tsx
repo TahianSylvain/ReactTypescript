@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
 import { Square } from "../Components/Square"
 
-
-
 type Player = "X"|"O"|null|"BOTH"
 
 export const Board = () => {
