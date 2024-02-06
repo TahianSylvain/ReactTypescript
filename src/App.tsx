@@ -4,12 +4,14 @@ import './App.css';
 
 import { Container } from './Components/StyleProp';
 import { Button, Input } from './Components/EventProps';
+import { Status } from './Components/Status';
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Status />
         <img src={logo} className="App-logo"
          alt="logo" />
         <p>
@@ -29,10 +31,10 @@ function App() {
            padding: "1rem" }
           }/> 
         */}
-        <Button handleClick={(event, id)=>{
+        {/* <Button handleClick={(event, id)=>{
           console.log(id, React, event)
         }} />
-        <Input value='' handleChange={event=>console.log(event)} />
+        <Input value='' handleChange={event=>console.log(event)} /> */}
       </header>
     </div>
   );
