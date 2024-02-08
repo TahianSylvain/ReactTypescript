@@ -6,9 +6,9 @@ type AuthUser = {
 }
 
 export const User = () => {
-    const [user, setUser]=useState<AuthUser|null>()
+    const [user, setUser]=useState<AuthUser>()
     const handleLogin = () => setUser({
-        name: 'Tahiana', email:"tahian@yaho.com"})
+        name: 'Tahiana', email:"tahian@yahoo.com"})
     const handleLogout = () => {}
 
     return <div className="credential">
@@ -22,6 +22,5 @@ export const User = () => {
         <div className="info-mess">
             Username is {user?.email}
         </div>
-    </div>
-    
+    </div>   
 }

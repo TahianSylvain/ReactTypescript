@@ -1,17 +1,18 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 import { Container } from './Components/StyleProp';
 import { Button, Input } from './Components/EventProps';
 import { Status } from './Components/Status';
+import { Counter } from './State/Counter';
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Status />
+        {/* <Counter></Counter> */}
+        <Status status={'success'} />
         <img src={logo} className="App-logo"
          alt="logo" />
         <p>
